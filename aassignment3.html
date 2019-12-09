@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<title>Calculator</title>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, the Popper.js, then Bootstrap JS -->
+	<script src="http://code.jquery.com/jquery-3.3.1.slim.min.js" 
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+			crossorigin="anonymous"></script>
+	<style>
+		.flex {
+			display: flex;
+			flex-direction: column;
+		}
+	</style>
+</head>
+
+<body>
+	<h2>First part</h2>
+	<form class="form-vertical">
+		<div class="form-group flex">
+			<input 
+				id="numberInput" 
+				name="myInputName"
+				type="text">
+
+			<div id="outputBox">changeMe</div>
+			<button class="btn" type="button" onclick="DisplayInputInOutout(this)">Read Input to output box</button>
+		</div>
+	</form>
+
+	<h2>Second part</h2>
+	<form class="form-vertical">
+		<div class="form-group flex">
+			<input 
+				id="numberInput2" 
+				name="myInputName2"
+				type="text">
+
+			<input id="output2" type="text">
+			<button class="btn"
+					type="button"
+					onclick="DisplayInputInIn(this)">Read Input to Output box</button>
+		</div>
+	</form>
+
+	<h2>Third part</h2>
+	<form class="form-vertical">
+		<div class="form-group flex">
+			<input 
+				id="numberInput3" 
+				name="myInputName3"
+				type="text">
+
+			<div id="output3">changeMe</div>
+			<button class="btn" type="button" onclick="DisplayOutout(this)">Read Input to Output box</button>
+		</div>
+	</form>
+	<script src="assignment3.js"></script>
+
+
+	<!-- Note this comes after Button is declared. If this occurs before, the value in count does not get set until the first time you hit the button -->
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
